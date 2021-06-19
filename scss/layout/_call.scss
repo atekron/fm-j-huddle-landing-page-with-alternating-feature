@@ -1,0 +1,22 @@
+.call {
+  background-color: white;
+  @include cardRoundedShadow;
+  padding: 2rem 0;
+  margin: 4rem auto;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 250px;
+  max-width: 80%;
+  position: relative;
+  top: 7rem;
+  @media screen and (min-width: 1080px) {
+    max-width: 50%;
+  }
+  &__title {
+    margin-bottom: 2rem;
+  }
+}
