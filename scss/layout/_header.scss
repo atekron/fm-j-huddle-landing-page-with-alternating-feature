@@ -1,0 +1,90 @@
+.header {
+  padding: 1rem;
+  background-color: $pale-cyan;
+  background-image: url("../images/bg-hero-mobile.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 100% auto;
+  text-align: center;
+
+  @media screen and (min-width: 960px) {
+    background-image: url("../images/bg-hero-desktop.svg");
+    &__main {
+      display: flex;
+      max-width: $maxWidth;
+      margin: 0 auto;
+      margin-bottom: 4rem;
+    }
+  }
+  &__navbar {
+    max-width: $maxWidth;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+    @media screen and (max-width: 500px) {
+      flex-direction: column;
+    }
+    @media screen and (min-width: 960px) {
+      margin-top: 4rem;
+    }
+  }
+
+  &__logo {
+    img {
+      display: block;
+      height: 1.6rem;
+      width: auto;
+      @media screen and (min-width: 960px) {
+        height: 2rem;
+      }
+    }
+  }
+
+  &__info {
+    margin-top: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    @media screen and (min-width: 960px) {
+      margin-top: 3rem;
+      text-align: left;
+      justify-content: center;
+      align-items: flex-start;
+      width: 60%;
+    }
+  }
+
+  &__title {
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+
+  &__text {
+    font-size: 1.5rem;
+    margin: 3rem 2rem;
+    @media screen and (min-width: 960px) {
+      margin: 2rem;
+      margin-left: 0;
+      font-size: 1.2rem;
+    }
+  }
+
+  &__hero-image {
+    margin-top: 4rem;
+    padding: 2rem;
+    @media screen and (min-width: 960px) {
+      margin-top: 3rem;
+      margin-left: 3rem;
+      padding: 0;
+    }
+    img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+  }
+}
